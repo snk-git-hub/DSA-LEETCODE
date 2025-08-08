@@ -7,6 +7,7 @@
 | [0001-two-sum](https://github.com/snk-git-hub/leetcode/tree/master/0001-two-sum) |
 | [0014-longest-common-prefix](https://github.com/snk-git-hub/leetcode/tree/master/0014-longest-common-prefix) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/snk-git-hub/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0054-spiral-matrix](https://github.com/snk-git-hub/leetcode/tree/master/0054-spiral-matrix) |
 | [0268-missing-number](https://github.com/snk-git-hub/leetcode/tree/master/0268-missing-number) |
 | [0349-intersection-of-two-arrays](https://github.com/snk-git-hub/leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/snk-git-hub/leetcode/tree/master/2271-rearrange-array-elements-by-sign) |
@@ -79,5 +80,10 @@
 ## Simulation
 |  |
 | ------- |
+| [0054-spiral-matrix](https://github.com/snk-git-hub/leetcode/tree/master/0054-spiral-matrix) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/snk-git-hub/leetcode/tree/master/2271-rearrange-array-elements-by-sign) |
+## Matrix
+|  |
+| ------- |
+| [0054-spiral-matrix](https://github.com/snk-git-hub/leetcode/tree/master/0054-spiral-matrix) |
 <!---LeetCode Topics End-->
