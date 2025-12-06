@@ -16,6 +16,7 @@ Most problems fall into these categories. Learn to identify them:
 | **Prefix Sum** | Range query, subarray sum | Cumulative sum array |
 
 ---
+<img width="1200" height="922" alt="image" src="https://github.com/user-attachments/assets/41256c05-f646-4659-8f6f-28da79581748" />
 
 https://claude.ai/public/artifacts/36188888-1a5c-47ab-90a5-7164aef178c6
 <img width="956" height="419" alt="image" src="https://github.com/user-attachments/assets/006ff105-d532-433a-892c-8a61784c0293" />
