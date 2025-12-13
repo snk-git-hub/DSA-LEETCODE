@@ -238,12 +238,12 @@ int main() {
 }
 
 
-
+✓
 ---
 ##  Recursion Roadmap
 ---
 ## 🟢 Easy Problems
-* [ _] Factorial
+* [✓] Factorial
 * [ ] Print 1 to n
 * [ ] Print n to 1
 * [ ] Sum of array
