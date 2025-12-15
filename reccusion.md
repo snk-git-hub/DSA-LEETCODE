@@ -247,7 +247,7 @@ int main() {
 * [✓] Print 1 to n
 * [✓] Print n to 1
 * [✓] Sum of array
-* [ ] Reverse a string
+* [✓] Reverse a string
 * [ ] Decimal to binary
 * [ ] Sum of digits
 * [ ] Array Min and Max
