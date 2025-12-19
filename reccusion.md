@@ -250,7 +250,7 @@ int main() {
 * [✓] Reverse a string
 * [✓] Decimal to binary
 * [✓] Sum of digits
-* [ ] Array Min and Max
+* [✓] Array Min and Max
 * [ ] Palindrome Check
 ---
 ## Medium Problems
