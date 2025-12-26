@@ -1,0 +1,355 @@
+# Complete C++ Learning Path - All Topics with Documentation
+
+Here's a comprehensive breakdown of **every single topic** from all three courses you've listed:
+
+---
+
+## **COURSE 1: C++ Essential Training**
+
+### **Introduction**
+| Topic | Duration | Description |
+|-------|----------|-------------|
+| Learn C++ | 1m 3s | Course overview and objectives |
+| Using the exercise files | 1m 3s | How to work with course materials |
+| What is C++? | 7m 10s | History, features, and use cases |
+
+**Resources:**
+- [C++ History - cppreference](https://en.cppreference.com/w/cpp/language/history)
+- [Introduction to C++ - ISO C++](https://isocpp.org/get-started)
+
+---
+
+### **Chapter 1: Toolchain and Installation**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| The C++ toolchain | 2m 40s | Compiler, linker, preprocessor | [Compilation - cppreference](https://en.cppreference.com/w/cpp/language/translation_phases) |
+| Using an IDE with exercise files | 7m 37s | IDE setup, project configuration | [Compilers list - ISO C++](https://isocpp.org/get-started) |
+| Check for std::format support | 1m 10s | C++20 feature detection | [std::format - cppreference](https://en.cppreference.com/w/cpp/utility/format/format) |
+
+---
+
+### **Chapter 2: The Basics**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Basic syntax | 2m 35s | C++ syntax rules, semicolons, blocks | [Basic concepts - cppreference](https://en.cppreference.com/w/cpp/language/basic_concepts) |
+| Anatomy of a C++ program | 6m 33s | main(), includes, namespaces, structure | [Program structure - cppreference](https://en.cppreference.com/w/cpp/language/main_function) |
+| Statements and expressions | 2m 7s | Statements vs expressions, evaluation | [Expressions - cppreference](https://en.cppreference.com/w/cpp/language/expressions) |
+| Identifiers | 2m 32s | Naming rules, conventions, keywords | [Identifiers - cppreference](https://en.cppreference.com/w/cpp/language/identifiers) |
+| Defining variables | 5m 56s | Declaration, initialization, scope | [Declarations - cppreference](https://en.cppreference.com/w/cpp/language/declarations) |
+| Pointers and references | 9m 30s | Pointer syntax, dereferencing, references | [Pointers - cppreference](https://en.cppreference.com/w/cpp/language/pointer)<br>[References - cppreference](https://en.cppreference.com/w/cpp/language/reference) |
+
+---
+
+### **Chapter 3: Flow Control**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Conditionals | 6m 50s | if, else if, else, switch statements | [if statement - cppreference](https://en.cppreference.com/w/cpp/language/if)<br>[switch - cppreference](https://en.cppreference.com/w/cpp/language/switch) |
+| Loops | 3m 48s | while, do-while loops | [while loop - cppreference](https://en.cppreference.com/w/cpp/language/while)<br>[do-while - cppreference](https://en.cppreference.com/w/cpp/language/do) |
+| Iterating with for | 6m 39s | Traditional for, range-based for | [for loop - cppreference](https://en.cppreference.com/w/cpp/language/for)<br>[Range-based for - cppreference](https://en.cppreference.com/w/cpp/language/range-for) |
+| Functions | 3m 16s | Function declaration, definition, calling | [Functions - cppreference](https://en.cppreference.com/w/cpp/language/functions) |
+
+---
+
+### **Chapter 4: Data Types**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Overview of data types | 3m 21s | Type system, categories | [Types - cppreference](https://en.cppreference.com/w/cpp/language/types) |
+| Integer types | 2m 43s | int, short, long, long long, signed/unsigned | [Fundamental types - cppreference](https://en.cppreference.com/w/cpp/language/types) |
+| Floating point types | 6m 51s | float, double, long double, precision | [Floating point - cppreference](https://en.cppreference.com/w/cpp/language/types#Floating-point_types) |
+| The auto type | 4m 2s | Type deduction, auto keyword | [auto - cppreference](https://en.cppreference.com/w/cpp/language/auto) |
+| Qualifiers | 4m 33s | const, volatile, mutable | [cv qualifiers - cppreference](https://en.cppreference.com/w/cpp/language/cv) |
+| Type aliases | 2m 5s | typedef, using declarations | [Type alias - cppreference](https://en.cppreference.com/w/cpp/language/type_alias) |
+| Primitive arrays | 5m 23s | Array declaration, indexing, multidimensional | [Arrays - cppreference](https://en.cppreference.com/w/cpp/language/array) |
+| C-strings | 4m 37s | char arrays, string literals, null termination | [C-strings - cppreference](https://en.cppreference.com/w/cpp/string/byte) |
+| Structures | 2m 50s | struct keyword, member access | [Struct - cppreference](https://en.cppreference.com/w/cpp/language/class) |
+| Challenge: Library card | 2m 9s | Practical exercise | - |
+| Solution: Library card | 1m 16s | Solution walkthrough | - |
+
+---
+
+### **Chapter 5: Operators**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Common operators | 7m 58s | Arithmetic, comparison, logical operators | [Operators - cppreference](https://en.cppreference.com/w/cpp/language/operators) |
+| Compound assignment | 1m 49s | +=, -=, *=, /=, etc. | [Assignment operators - cppreference](https://en.cppreference.com/w/cpp/language/operator_assignment) |
+| Increment and decrement | 4m 19s | ++, --, prefix vs postfix | [Increment/decrement - cppreference](https://en.cppreference.com/w/cpp/language/operator_incdec) |
+| Operator precedence | 2m 11s | Order of operations | [Operator precedence - cppreference](https://en.cppreference.com/w/cpp/language/operator_precedence) |
+| Challenge: Prime numbers | 1m 5s | Practical exercise | - |
+| Solution: Prime numbers | 1m 12s | Solution walkthrough | - |
+
+---
+
+### **Chapter 6: Functions**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Overview of C++ functions | 6m 30s | Function basics, syntax, purpose | [Functions - cppreference](https://en.cppreference.com/w/cpp/language/functions) |
+| Passing values to a function | 6m 49s | Pass by value, reference, pointer | [Function parameters - cppreference](https://en.cppreference.com/w/cpp/language/function) |
+| Returning values | 4m 15s | Return statements, return types | [Return statement - cppreference](https://en.cppreference.com/w/cpp/language/return) |
+| Using recursion | 1m 52s | Recursive functions, base case | [Recursion - LearnCpp](https://www.learncpp.com/cpp-tutorial/recursion/) |
+| Challenge: Non-recursive factorial | 1m 3s | Practical exercise | - |
+| Solution: Non-recursive factorial | 1m 6s | Solution walkthrough | - |
+
+---
+
+### **Chapter 7: Classes and Objects**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Overview of classes and objects | 5m 43s | OOP concepts, encapsulation | [Classes - cppreference](https://en.cppreference.com/w/cpp/language/classes) |
+| Data members | 3m 36s | Member variables, access specifiers | [Data members - cppreference](https://en.cppreference.com/w/cpp/language/data_members) |
+| Function members | 4m 27s | Member functions, methods | [Member functions - cppreference](https://en.cppreference.com/w/cpp/language/member_functions) |
+| Constructors and destructors | 8m 7s | Object initialization, cleanup | [Constructors - cppreference](https://en.cppreference.com/w/cpp/language/constructor)<br>[Destructors - cppreference](https://en.cppreference.com/w/cpp/language/destructor) |
+| Operator overloads | 5m 28s | Overloading operators for classes | [Operator overloading - cppreference](https://en.cppreference.com/w/cpp/language/operators) |
+| Non-member operators | 5m 31s | Friend functions, external operators | [Friend declaration - cppreference](https://en.cppreference.com/w/cpp/language/friend) |
+| Challenge: Non-member operators | 54s | Practical exercise | - |
+| Solution: Non-member operators | 1m 20s | Solution walkthrough | - |
+
+---
+
+### **Chapter 8: Templates**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Understanding templates | 2m 40s | Generic programming, type parameters | [Templates - cppreference](https://en.cppreference.com/w/cpp/language/templates) |
+| Template functions | 5m 19s | Function templates, type deduction | [Function templates - cppreference](https://en.cppreference.com/w/cpp/language/function_template) |
+| Template classes | 5m 54s | Class templates, instantiation | [Class templates - cppreference](https://en.cppreference.com/w/cpp/language/class_template) |
+| Challenge: Template factorial | 33s | Practical exercise | - |
+| Solution: Template factorial | 1m 13s | Solution walkthrough | - |
+
+---
+
+### **Chapter 9: Standard Template Library**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Overview of the STL | 1m 58s | Containers, algorithms, iterators | [STL - cppreference](https://en.cppreference.com/w/cpp/container) |
+| Vectors | 5m 47s | std::vector, dynamic arrays | [std::vector - cppreference](https://en.cppreference.com/w/cpp/container/vector) |
+| Strings | 4m 36s | std::string, string operations | [std::string - cppreference](https://en.cppreference.com/w/cpp/string/basic_string) |
+| Format | 6m 59s | std::format (C++20), string formatting | [std::format - cppreference](https://en.cppreference.com/w/cpp/utility/format/format) |
+| I/O Stream | 8m 19s | iostream, cin, cout, file I/O | [iostream - cppreference](https://en.cppreference.com/w/cpp/io) |
+| Challenge: Transform a file | 1m 7s | Practical exercise | - |
+| Solution: Transform a file | 1m 52s | Solution walkthrough | - |
+
+---
+
+## **COURSE 2: Structural Design Patterns in C++**
+
+### **Introduction**
+| Topic | Duration | Description |
+|-------|----------|-------------|
+| Structural design patterns in C++ | 1m 2s | Overview of structural patterns |
+
+**Resources:**
+- [Design Patterns Overview - Refactoring Guru](https://refactoring.guru/design-patterns)
+- [Gang of Four Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
+
+---
+
+### **Chapter 1: The Adapter Pattern**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Overview | 3m 38s | Pattern purpose, problem it solves | [Adapter Pattern - Refactoring Guru](https://refactoring.guru/design-patterns/adapter) |
+| When to use Adapter | 2m 36s | Use cases, scenarios | [Adapter - SourceMaking](https://sourcemaking.com/design_patterns/adapter) |
+| Implementing object adapter | 4m 38s | Composition-based adapter | - |
+| Implementing class adapter | 3m 16s | Inheritance-based adapter | - |
+| Challenge: Refactor with Adapter | 1m 45s | Practical exercise | - |
+| Solution: Refactor with Adapter | 2m 8s | Solution walkthrough | - |
+
+---
+
+### **Chapter 2: The Bridge Pattern**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Overview | 1m 50s | Separating abstraction from implementation | [Bridge Pattern - Refactoring Guru](https://refactoring.guru/design-patterns/bridge) |
+| Exploding class hierarchies | 1m 39s | Problem: Cartesian product of classes | [Bridge - SourceMaking](https://sourcemaking.com/design_patterns/bridge) |
+| Bridge pattern in action | 5m 47s | Implementation example | - |
+| Challenge: Enhancing with Bridge | 1m 34s | Practical exercise | - |
+| Solution: Enhancing with Bridge | 2m 32s | Solution walkthrough | - |
+
+---
+
+### **Chapter 3: The Composite Pattern**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Overview | 3m 22s | Tree structures, part-whole hierarchies | [Composite Pattern - Refactoring Guru](https://refactoring.guru/design-patterns/composite) |
+| Implementing hierarchical structure | 2m 16s | Component, leaf, composite classes | [Composite - SourceMaking](https://sourcemaking.com/design_patterns/composite) |
+| Redesigning with Composite | 5m 21s | Refactoring example | - |
+| Challenge: Drawing shapes | 2m 44s | Practical exercise | - |
+| Solution: Drawing shapes | 2m 4s | Solution walkthrough | - |
+
+---
+
+### **Chapter 4: The Decorator Pattern**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Overview | 2m 11s | Adding responsibilities dynamically | [Decorator Pattern - Refactoring Guru](https://refactoring.guru/design-patterns/decorator) |
+| Computer shop demo (inheritance) | 1m 53s | Problem with inheritance approach | [Decorator - SourceMaking](https://sourcemaking.com/design_patterns/decorator) |
+| Computer shop demo (Decorator) | 4m 43s | Decorator implementation | - |
+| Challenge: Pizza toppings | 1m 52s | Practical exercise | - |
+| Solution: Pizza toppings | 2m 47s | Solution walkthrough | - |
+
+---
+
+### **Chapter 5: The Façade Pattern**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Overview | 2m 48s | Simplified interface to complex subsystem | [Facade Pattern - Refactoring Guru](https://refactoring.guru/design-patterns/facade) |
+| Complex interface demo | 1m 43s | Problem: complex API | [Facade - SourceMaking](https://sourcemaking.com/design_patterns/facade) |
+| Applying Facade | 5m 4s | Implementation example | - |
+| Challenge: Hide complexity | 1m 51s | Practical exercise | - |
+| Solution: Hide complexity | 1m 24s | Solution walkthrough | - |
+
+---
+
+### **Chapter 6: The Flyweight Pattern**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Overview | 2m 46s | Sharing to reduce memory usage | [Flyweight Pattern - Refactoring Guru](https://refactoring.guru/design-patterns/flyweight) |
+| Introducing sprites | 2m 23s | Graphics example scenario | [Flyweight - SourceMaking](https://sourcemaking.com/design_patterns/flyweight) |
+| Reducing memory usage: Part 1 | 4m 38s | Intrinsic vs extrinsic state | - |
+| Reducing memory usage: Part 2 | 6m 3s | Complete implementation | - |
+
+---
+
+### **Chapter 7: The Proxy Pattern**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Overview | 3m 37s | Surrogate or placeholder object | [Proxy Pattern - Refactoring Guru](https://refactoring.guru/design-patterns/proxy) |
+| What problem does proxy solve? | 2m 37s | Use cases: virtual, protective, remote | [Proxy - SourceMaking](https://sourcemaking.com/design_patterns/proxy) |
+| The virtual proxy | 5m 48s | Lazy initialization example | - |
+| Challenge: Protective proxy | 1m 25s | Practical exercise | - |
+| Solution: Protective proxy | 2m 25s | Solution walkthrough | - |
+
+---
+
+## **COURSE 3: C++ Advanced Topics**
+
+### **Introduction**
+| Topic | Duration | Description |
+|-------|----------|-------------|
+| About this course | 1m 1s | Course overview |
+| Using the exercise files | 1m 44s | Setup instructions |
+
+---
+
+### **Chapter 1: Operator Overloads**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Operator overloads | 7m 8s | Overloading operators in classes | [Operator overloading - cppreference](https://en.cppreference.com/w/cpp/language/operators) |
+| Nonmember operators | 7m 50s | Friend and external operator functions | [Friend functions - cppreference](https://en.cppreference.com/w/cpp/language/friend) |
+| Conversion operators | 4m 35s | Type conversion operators | [User-defined conversion - cppreference](https://en.cppreference.com/w/cpp/language/cast_operator) |
+| Increment/decrement operators | 4m 10s | Prefix and postfix ++ and -- | [Increment operators - cppreference](https://en.cppreference.com/w/cpp/language/operator_incdec) |
+| Functors | 2m 55s | Function objects, operator() | [Function objects - cppreference](https://en.cppreference.com/w/cpp/utility/functional) |
+
+---
+
+### **Chapter 2: Move Semantics**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| What is move semantics? | 2m 24s | Motivation, performance benefits | [Move semantics - cppreference](https://en.cppreference.com/w/cpp/language/move_constructor) |
+| Understanding lvalues and rvalues | 1m 46s | Value categories | [Value categories - cppreference](https://en.cppreference.com/w/cpp/language/value_category) |
+| Using std::move | 4m 42s | Casting to rvalue reference | [std::move - cppreference](https://en.cppreference.com/w/cpp/utility/move) |
+| The move constructor | 6m 51s | Implementing move constructor | [Move constructor - cppreference](https://en.cppreference.com/w/cpp/language/move_constructor) |
+| The move assignment operator | 3m 43s | Implementing move assignment | [Move assignment - cppreference](https://en.cppreference.com/w/cpp/language/move_assignment) |
+| The copy-and-swap idiom | 5m | Exception safety technique | [Copy-and-swap - cppreference](https://en.cppreference.com/w/cpp/language/copy_assignment) |
+| Rule of three and five | 1m 48s | Special member function rules | [Rule of three/five - cppreference](https://en.cppreference.com/w/cpp/language/rule_of_three) |
+
+---
+
+### **Chapter 3: Lambda Expressions**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Lambda syntax | 5m 4s | Capture, parameters, body | [Lambda expressions - cppreference](https://en.cppreference.com/w/cpp/language/lambda) |
+| Closures | 2m 35s | Capturing variables | [Lambda capture - cppreference](https://en.cppreference.com/w/cpp/language/lambda#Lambda_capture) |
+| Algorithm predicates | 4m 52s | Using lambdas with STL algorithms | [Algorithms library - cppreference](https://en.cppreference.com/w/cpp/algorithm) |
+| Challenge: Lambda jump table | 1m 51s | Practical exercise | - |
+
+---
+
+### **Chapter 4: Constraints and Concepts (C++20)**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Why constraints? | 5m 47s | Motivation, template constraints | [Constraints - cppreference](https://en.cppreference.com/w/cpp/language/constraints) |
+| Constraint syntax | 2m 16s | requires clause, requires expression | [requires - cppreference](https://en.cppreference.com/w/cpp/language/constraints) |
+| Defining concepts | 3m 42s | Creating reusable concepts | [Concepts library - cppreference](https://en.cppreference.com/w/cpp/concepts) |
+
+---
+
+### **Chapter 5: Optionals and Variants**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| The optional class | 3m 20s | std::optional, nullable values | [std::optional - cppreference](https://en.cppreference.com/w/cpp/utility/optional) |
+| The any class | 2m 24s | std::any, type-safe container | [std::any - cppreference](https://en.cppreference.com/w/cpp/utility/any) |
+| The variant class | 5m 20s | std::variant, type-safe unions | [std::variant - cppreference](https://en.cppreference.com/w/cpp/utility/variant) |
+
+---
+
+### **Chapter 6: Concurrency**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Sleeping | 2m 40s | std::this_thread::sleep_for | [sleep_for - cppreference](https://en.cppreference.com/w/cpp/thread/sleep_for) |
+| Threads | 4m 1s | std::thread, thread creation | [std::thread - cppreference](https://en.cppreference.com/w/cpp/thread/thread) |
+| The async function | 6m 43s | std::async, futures, promises | [std::async - cppreference](https://en.cppreference.com/w/cpp/thread/async) |
+| Mutex and lock | 4m 58s | std::mutex, std::lock_guard | [std::mutex - cppreference](https://en.cppreference.com/w/cpp/thread/mutex)<br>[std::lock_guard - cppreference](https://en.cppreference.com/w/cpp/thread/lock_guard) |
+| Atomic variables | 4m 36s | std::atomic, lock-free operations | [std::atomic - cppreference](https://en.cppreference.com/w/cpp/atomic/atomic) |
+| Producer-consumer idiom | 3m | Thread synchronization pattern | [Condition variable - cppreference](https://en.cppreference.com/w/cpp/thread/condition_variable) |
+
+---
+
+### **Chapter 7: Other Subjects**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| Initialization | 13m 1s | Uniform initialization, aggregate, list | [Initialization - cppreference](https://en.cppreference.com/w/cpp/language/initialization) |
+| Structured bindings | 4m 34s | Decomposing objects (C++17) | [Structured binding - cppreference](https://en.cppreference.com/w/cpp/language/structured_binding) |
+| Random number engines | 4m | std::random, distributions | [Random library - cppreference](https://en.cppreference.com/w/cpp/numeric/random) |
+| The chrono library | 5m 13s | Time operations, durations, clocks | [Chrono library - cppreference](https://en.cppreference.com/w/cpp/chrono) |
+| The filesystem library | 9m 42s | std::filesystem, path operations | [Filesystem - cppreference](https://en.cppreference.com/w/cpp/filesystem) |
+
+---
+
+### **Chapter 8: C++20 New Features**
+| Topic | Duration | Key Concepts | Documentation |
+|-------|----------|--------------|---------------|
+| The format library | 7m 54s | std::format, type-safe formatting | [std::format - cppreference](https://en.cppreference.com/w/cpp/utility/format/format) |
+| The spaceship operator | 4m | Three-way comparison operator <=> | [Three-way comparison - cppreference](https://en.cppreference.com/w/cpp/language/operator_comparison#Three-way_comparison) |
+| Integer comparisons | 3m 19s | Safe integer comparison functions | [Integer comparison - cppreference](https://en.cppreference.com/w/cpp/utility/intcmp) |
+| The span class | 1m 31s | std::span, non-owning view | [std::span - cppreference](https://en.cppreference.com/w/cpp/container/span) |
+
+---
+
+### **Final Project**
+| Topic | Duration | Description |
+|-------|----------|-------------|
+| Final project: Numword | 1m 13s | Capstone project |
+| Thank you | 1m | Course conclusion |
+
+---
+
+## **📚 Essential C++ Documentation Resources**
+
+### **Official Resources**
+1. **cppreference.com** - https://en.cppreference.com/
+   - Most comprehensive C++ reference
+   - Covers C++11 through C++23
+
+2. **ISO C++ Official Site** - https://isocpp.org/
+   - Official C++ standards information
+   - FAQ and guidelines
+
+3. **C++ Core Guidelines** - https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines
+   - Best practices by Bjarne Stroustrup and Herb Sutter
+
+4. **C++ Standard Draft** - https://eel.is/c++draft/
+   - Latest working draft of the standard
+
+### **Learning Resources**
+1. **LearnCpp.com** - https://www.learncpp.com/
+   - Comprehensive tutorials
+
+2. **Design Patterns** - https://refactoring.guru/design-patterns/cpp
+   - Gang of Four patterns with C++ examples
+
+3. **Compiler Explorer** - https://godbolt.org/
+   - Online compiler for testing
+
+---
+
+This table covers **every single topic** from all three courses with complete documentation links!
+  
