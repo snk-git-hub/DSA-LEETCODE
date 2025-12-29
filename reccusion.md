@@ -16,7 +16,7 @@
 ## Medium Problems
 * [✓] Mean of Array
 * [✓] Adjacent duplicates
-* [ ] Coin Change
+* [✓] Coin Change
 * [ ] Binary to Gray
 * [ ] Longest Palindromic Substring
 * [ ] Tower of Hanoi
