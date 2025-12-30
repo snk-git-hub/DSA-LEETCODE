@@ -1,3 +1,268 @@
+# Recursion Tricks/Patterns in LeetCode
+
+Here are the key **decision-making patterns** and tricks used in recursion problems:
+
+## 1. **Take / Not Take Pattern**
+For subset/combination problems where you decide whether to include an element.
+
+```cpp
+// Example: Subset Sum
+void subsetSum(vector<int>& nums, int idx, int target, int sum) {
+    if (idx == nums.size()) {
+        if (sum == target) {
+            // found valid subset
+        }
+        return;
+    }
+    
+    // Take current element
+    subsetSum(nums, idx + 1, target, sum + nums[idx]);
+    
+    // Not take current element
+    subsetSum(nums, idx + 1, target, sum);
+}
+
+// Example: 0/1 Knapsack
+int knapsack(vector<int>& wt, vector<int>& val, int idx, int W) {
+    if (idx == 0 || W == 0) return 0;
+    
+    if (wt[idx-1] <= W) {
+        // Take or Not take
+        return max(
+            val[idx-1] + knapsack(wt, val, idx-1, W - wt[idx-1]), // take
+            knapsack(wt, val, idx-1, W)                            // not take
+        );
+    }
+    return knapsack(wt, val, idx-1, W); // can't take
+}
+```
+
+## 2. **Try All Choices Pattern**
+For permutation/combination problems where you try each available choice.
+
+```cpp
+// Example: Generate Parentheses
+void generate(int open, int close, int n, string current, vector<string>& result) {
+    if (current.length() == 2 * n) {
+        result.push_back(current);
+        return;
+    }
+    
+    if (open < n) {
+        generate(open + 1, close, n, current + '(', result);
+    }
+    if (close < open) {
+        generate(open, close + 1, n, current + ')', result);
+    }
+}
+
+// Example: Letter Combinations of Phone Number
+void combinations(string& digits, int idx, string& current, 
+                  vector<string>& result, vector<string>& mapping) {
+    if (idx == digits.size()) {
+        result.push_back(current);
+        return;
+    }
+    
+    string letters = mapping[digits[idx] - '0'];
+    for (char c : letters) {
+        current.push_back(c);
+        combinations(digits, idx + 1, current, result, mapping);
+        current.pop_back(); // backtrack
+    }
+}
+```
+
+## 3. **Include-Exclude Pattern**
+Similar to take/not-take but tracks which elements are included.
+
+```cpp
+// Example: Subsets
+void subsets(vector<int>& nums, int idx, vector<int>& current, 
+             vector<vector<int>>& result) {
+    result.push_back(current);
+    
+    for (int i = idx; i < nums.size(); i++) {
+        current.push_back(nums[i]);      // include
+        subsets(nums, i + 1, current, result);
+        current.pop_back();              // exclude (backtrack)
+    }
+}
+```
+
+## 4. **Up-Down-Left-Right (4-Direction) Pattern**
+For grid/matrix problems.
+
+```cpp
+// Example: Number of Islands
+int dx[] = {-1, 1, 0, 0};
+int dy[] = {0, 0, -1, 1};
+
+void dfs(vector<vector<char>>& grid, int i, int j) {
+    if (i < 0 || i >= grid.size() || j < 0 || j >= grid[0].size() 
+        || grid[i][j] == '0') {
+        return;
+    }
+    
+    grid[i][j] = '0'; // mark visited
+    
+    for (int k = 0; k < 4; k++) {
+        dfs(grid, i + dx[k], j + dy[k]);
+    }
+}
+```
+
+## 5. **Express in Terms of Index Pattern**
+Define recursion in terms of array indices or positions.
+
+```cpp
+// Example: Longest Increasing Subsequence
+int lis(vector<int>& nums, int idx, int prevIdx) {
+    if (idx == nums.size()) return 0;
+    
+    // Not take
+    int notTake = lis(nums, idx + 1, prevIdx);
+    
+    // Take (if valid)
+    int take = 0;
+    if (prevIdx == -1 || nums[idx] > nums[prevIdx]) {
+        take = 1 + lis(nums, idx + 1, idx);
+    }
+    
+    return max(take, notTake);
+}
+```
+
+## 6. **Partition Pattern**
+Try all possible ways to partition/split.
+
+```cpp
+// Example: Palindrome Partitioning
+void partition(string& s, int start, vector<string>& current, 
+               vector<vector<string>>& result) {
+    if (start == s.size()) {
+        result.push_back(current);
+        return;
+    }
+    
+    for (int end = start; end < s.size(); end++) {
+        if (isPalindrome(s, start, end)) {
+            current.push_back(s.substr(start, end - start + 1));
+            partition(s, end + 1, current, result);
+            current.pop_back(); // backtrack
+        }
+    }
+}
+```
+
+## 7. **Pick from Both Ends Pattern**
+For problems where you can pick from start or end.
+
+```cpp
+// Example: Stone Game / Predict the Winner
+int maxScore(vector<int>& nums, int left, int right) {
+    if (left > right) return 0;
+    
+    // Pick from left
+    int pickLeft = nums[left] + min(
+        maxScore(nums, left + 2, right),
+        maxScore(nums, left + 1, right - 1)
+    );
+    
+    // Pick from right
+    int pickRight = nums[right] + min(
+        maxScore(nums, left + 1, right - 1),
+        maxScore(nums, left, right - 2)
+    );
+    
+    return max(pickLeft, pickRight);
+}
+```
+
+## 8. **Match/Skip Pattern**
+For string matching problems.
+
+```cpp
+// Example: Wildcard Matching
+bool isMatch(string& s, string& p, int i, int j) {
+    if (j == p.size()) return i == s.size();
+    
+    bool firstMatch = (i < s.size() && (s[i] == p[j] || p[j] == '?'));
+    
+    if (p[j] == '*') {
+        // Skip * or use *
+        return isMatch(s, p, i, j + 1) ||           // skip *
+               (i < s.size() && isMatch(s, p, i + 1, j)); // use *
+    }
+    
+    return firstMatch && isMatch(s, p, i + 1, j + 1);
+}
+```
+
+## 9. **Generate vs Validate Pattern**
+Generate all possibilities then validate, or validate while generating.
+
+```cpp
+// Example: N-Queens
+void solveNQueens(int row, int n, vector<string>& board, 
+                  vector<vector<string>>& result) {
+    if (row == n) {
+        result.push_back(board);
+        return;
+    }
+    
+    for (int col = 0; col < n; col++) {
+        if (isSafe(board, row, col, n)) {    // validate
+            board[row][col] = 'Q';            // place
+            solveNQueens(row + 1, n, board, result);
+            board[row][col] = '.';            // backtrack
+        }
+    }
+}
+```
+
+## 10. **Nested Recursion Pattern**
+One recursive call depends on another.
+
+```cpp
+// Example: Ackermann function
+int ackermann(int m, int n) {
+    if (m == 0) return n + 1;
+    if (n == 0) return ackermann(m - 1, 1);
+    return ackermann(m - 1, ackermann(m, n - 1));
+}
+```
+
+## 11. **Return vs Modify Pattern**
+Either return result or modify data structure in-place.
+
+```cpp
+// Return pattern
+int countPaths(int i, int j) {
+    if (i == m && j == n) return 1;
+    return countPaths(i+1, j) + countPaths(i, j+1);
+}
+
+// Modify pattern (pass by reference)
+void generateSubsets(vector<int>& nums, int idx, vector<int>& current,
+                     vector<vector<int>>& result) {
+    result.push_back(current); // modify result
+    for (int i = idx; i < nums.size(); i++) {
+        current.push_back(nums[i]);
+        generateSubsets(nums, i + 1, current, result);
+        current.pop_back();
+    }
+}
+```
+
+## Key Tips for Mastering These Patterns:
+
+1. **Identify the decision space** - What choices do you have at each step?
+2. **Define base case clearly** - When does recursion stop?
+3. **Maintain state properly** - What needs to be passed/tracked?
+4. **Backtrack when needed** - Undo changes after exploring a path
+5. **Add memoization** - Cache results to avoid redundant computation
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ✓
 ---
 ##  Recursion Roadmap [✓]
